@@ -1,0 +1,26 @@
+{
+  "sequence_length": 64,
+  "dataset_sizes": [
+    1000,
+    2000,
+    5000,
+    10000
+  ],
+  "evaluation_size": 2000,
+  "batch_size": 128,
+  "learning_rate": 0.0003,
+  "main_epochs": 100,
+  "ablation_epochs": 30,
+  "main_seed": 2026,
+  "evaluation_seed": 9090,
+  "device": "cuda",
+  "torch_version": "2.11.0+cu130",
+  "parameter_counts": {
+    "small": 27682,
+    "medium": 104514,
+    "large": 405634
+  },
+  "metric": "sum_i max(0, 64 - sequence_NLL_bits_i) on training examples",
+  "main_checkpoint_policy": "final epoch",
+  "ablation_checkpoint_policy": "lowest evaluation NLL epoch"
+}

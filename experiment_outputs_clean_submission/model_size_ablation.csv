@@ -1,0 +1,4 @@
+experiment,seed,epochs_requested,epochs_completed,best_epoch_by_eval_nll,best_eval_nll_bits_per_token,final_epoch_train_nll_bits_per_token,final_epoch_eval_nll_bits_per_token,selected_checkpoint_policy,parameters,dropout,embed_dim,num_layers,num_heads,elapsed_seconds,model,dataset_size,memorization_bits,bits_per_parameter,train_mean_nll_bits_per_sequence
+model_size_small,123,30,30,17,1.0001860301898984,0.9999696273096261,1.0002623959903263,best_eval_nll,27682,0.0,32,2,4,9.581222295761108,small,5000,365.07558822631836,0.013188194069298402,63.990964513397216
+model_size_medium,123,30,30,20,1.000286300202935,1.0002483891728955,1.000370720294868,best_eval_nll,104514,0.0,64,2,4,11.456454277038574,medium,5000,469.7260856628418,0.004494384347195991,63.982136391448975
+model_size_large,123,30,30,20,1.0003443615458663,1.0003514633286579,1.0005821488865327,best_eval_nll,405634,0.0,128,2,4,19.912083625793457,large,5000,552.364818572998,0.001361732050501186,63.97539304580688
